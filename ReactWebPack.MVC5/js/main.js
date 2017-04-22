@@ -16,19 +16,19 @@ webpackJsonp([0],{
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 168);
 	
-	var _KanbanBoardContainer = __webpack_require__(/*! ./components/KanbanBoardContainer */ 231);
+	var _KanbanBoardContainer = __webpack_require__(/*! ./components/KanbanBoardContainer */ 229);
 	
 	var _KanbanBoardContainer2 = _interopRequireDefault(_KanbanBoardContainer);
 	
-	var _KanbanBoard = __webpack_require__(/*! ./components/KanbanBoard */ 250);
+	var _KanbanBoard = __webpack_require__(/*! ./components/KanbanBoard */ 248);
 	
 	var _KanbanBoard2 = _interopRequireDefault(_KanbanBoard);
 	
-	var _EditCard = __webpack_require__(/*! ./components/EditCard */ 773);
+	var _EditCard = __webpack_require__(/*! ./components/EditCard */ 735);
 	
 	var _EditCard2 = _interopRequireDefault(_EditCard);
 	
-	var _NewCard = __webpack_require__(/*! ./components/NewCard */ 776);
+	var _NewCard = __webpack_require__(/*! ./components/NewCard */ 738);
 	
 	var _NewCard2 = _interopRequireDefault(_NewCard);
 	
@@ -51,7 +51,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 231:
+/***/ 229:
 /*!************************************************!*\
   !*** ./app/components/KanbanBoardContainer.js ***!
   \************************************************/
@@ -69,17 +69,17 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _utils = __webpack_require__(/*! flux/utils */ 232);
+	var _utils = __webpack_require__(/*! flux/utils */ 230);
 	
-	var _KanbanBoard = __webpack_require__(/*! ./KanbanBoard */ 250);
+	var _KanbanBoard = __webpack_require__(/*! ./KanbanBoard */ 248);
 	
 	var _KanbanBoard2 = _interopRequireDefault(_KanbanBoard);
 	
-	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 768);
+	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 730);
 	
 	var _CardActionCreators2 = _interopRequireDefault(_CardActionCreators);
 	
-	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 770);
+	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 732);
 	
 	var _CardStore2 = _interopRequireDefault(_CardStore);
 	
@@ -97,7 +97,7 @@ webpackJsonp([0],{
 	  function KanbanBoardContainer() {
 	    _classCallCheck(this, KanbanBoardContainer);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(KanbanBoardContainer).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (KanbanBoardContainer.__proto__ || Object.getPrototypeOf(KanbanBoardContainer)).apply(this, arguments));
 	  }
 	
 	  _createClass(KanbanBoardContainer, [{
@@ -132,7 +132,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 232:
+/***/ 230:
 /*!*************************!*\
   !*** ./~/flux/utils.js ***!
   \*************************/
@@ -147,16 +147,16 @@ webpackJsonp([0],{
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 */
 	
-	module.exports.Container = __webpack_require__(/*! ./lib/FluxContainer */ 233);
-	module.exports.MapStore = __webpack_require__(/*! ./lib/FluxMapStore */ 237);
-	module.exports.Mixin = __webpack_require__(/*! ./lib/FluxMixinLegacy */ 249);
-	module.exports.ReduceStore = __webpack_require__(/*! ./lib/FluxReduceStore */ 238);
-	module.exports.Store = __webpack_require__(/*! ./lib/FluxStore */ 239);
+	module.exports.Container = __webpack_require__(/*! ./lib/FluxContainer */ 231);
+	module.exports.MapStore = __webpack_require__(/*! ./lib/FluxMapStore */ 235);
+	module.exports.Mixin = __webpack_require__(/*! ./lib/FluxMixinLegacy */ 247);
+	module.exports.ReduceStore = __webpack_require__(/*! ./lib/FluxReduceStore */ 236);
+	module.exports.Store = __webpack_require__(/*! ./lib/FluxStore */ 237);
 
 
 /***/ },
 
-/***/ 233:
+/***/ 231:
 /*!*************************************!*\
   !*** ./~/flux/lib/FluxContainer.js ***!
   \*************************************/
@@ -181,10 +181,10 @@ webpackJsonp([0],{
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxStoreGroup = __webpack_require__(/*! ./FluxStoreGroup */ 234);
+	var FluxStoreGroup = __webpack_require__(/*! ./FluxStoreGroup */ 232);
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 236);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 234);
 	
 	var DEFAULT_OPTIONS = {
 	  pure: true,
@@ -339,11 +339,11 @@ webpackJsonp([0],{
 	}
 	
 	module.exports = { create: create };
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 234:
+/***/ 232:
 /*!**************************************!*\
   !*** ./~/flux/lib/FluxStoreGroup.js ***!
   \**************************************/
@@ -365,7 +365,7 @@ webpackJsonp([0],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	/**
 	 * FluxStoreGroup allows you to execute a callback on every dispatch after
@@ -424,14 +424,14 @@ webpackJsonp([0],{
 	}
 	
 	module.exports = FluxStoreGroup;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 236:
-/*!*******************************************!*\
-  !*** ./~/flux/~/fbjs/lib/shallowEqual.js ***!
-  \*******************************************/
+/***/ 234:
+/*!************************************!*\
+  !*** ./~/fbjs/lib/shallowEqual.js ***!
+  \************************************/
 /***/ function(module, exports) {
 
 	/**
@@ -487,7 +487,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 237:
+/***/ 235:
 /*!************************************!*\
   !*** ./~/flux/lib/FluxMapStore.js ***!
   \************************************/
@@ -511,10 +511,10 @@ webpackJsonp([0],{
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxReduceStore = __webpack_require__(/*! ./FluxReduceStore */ 238);
-	var Immutable = __webpack_require__(/*! immutable */ 248);
+	var FluxReduceStore = __webpack_require__(/*! ./FluxReduceStore */ 236);
+	var Immutable = __webpack_require__(/*! immutable */ 246);
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	/**
 	 * This is a simple store. It allows caching key value pairs. An implementation
@@ -637,11 +637,11 @@ webpackJsonp([0],{
 	})(FluxReduceStore);
 	
 	module.exports = FluxMapStore;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 238:
+/***/ 236:
 /*!***************************************!*\
   !*** ./~/flux/lib/FluxReduceStore.js ***!
   \***************************************/
@@ -665,10 +665,10 @@ webpackJsonp([0],{
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var FluxStore = __webpack_require__(/*! ./FluxStore */ 239);
+	var FluxStore = __webpack_require__(/*! ./FluxStore */ 237);
 	
-	var abstractMethod = __webpack_require__(/*! ./abstractMethod */ 247);
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var abstractMethod = __webpack_require__(/*! ./abstractMethod */ 245);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	var FluxReduceStore = (function (_FluxStore) {
 	  _inherits(FluxReduceStore, _FluxStore);
@@ -748,11 +748,11 @@ webpackJsonp([0],{
 	})(FluxStore);
 	
 	module.exports = FluxReduceStore;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 239:
+/***/ 237:
 /*!*********************************!*\
   !*** ./~/flux/lib/FluxStore.js ***!
   \*********************************/
@@ -774,11 +774,11 @@ webpackJsonp([0],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var _require = __webpack_require__(/*! fbemitter */ 240);
+	var _require = __webpack_require__(/*! fbemitter */ 238);
 	
 	var EventEmitter = _require.EventEmitter;
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	/**
 	 * This class should be extended by the stores in your application, like so:
@@ -935,18 +935,18 @@ webpackJsonp([0],{
 	// private
 	
 	// protected, available to subclasses
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 240:
-/*!*************************************!*\
-  !*** ./~/flux/~/fbemitter/index.js ***!
-  \*************************************/
+/***/ 238:
+/*!******************************!*\
+  !*** ./~/fbemitter/index.js ***!
+  \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * Copyright (c) 2014-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -955,7 +955,8 @@ webpackJsonp([0],{
 	 */
 	
 	var fbemitter = {
-	  EventEmitter: __webpack_require__(/*! ./lib/BaseEventEmitter */ 241)
+	  EventEmitter: __webpack_require__(/*! ./lib/BaseEventEmitter */ 239),
+	  EmitterSubscription : __webpack_require__(/*! ./lib/EmitterSubscription */ 240)
 	};
 	
 	module.exports = fbemitter;
@@ -963,14 +964,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 241:
-/*!****************************************************!*\
-  !*** ./~/flux/~/fbemitter/lib/BaseEventEmitter.js ***!
-  \****************************************************/
+/***/ 239:
+/*!*********************************************!*\
+  !*** ./~/fbemitter/lib/BaseEventEmitter.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * Copyright (c) 2014-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -985,11 +986,11 @@ webpackJsonp([0],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var EmitterSubscription = __webpack_require__(/*! ./EmitterSubscription */ 242);
-	var EventSubscriptionVendor = __webpack_require__(/*! ./EventSubscriptionVendor */ 244);
+	var EmitterSubscription = __webpack_require__(/*! ./EmitterSubscription */ 240);
+	var EventSubscriptionVendor = __webpack_require__(/*! ./EventSubscriptionVendor */ 242);
 	
-	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 246);
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 245);
+	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 244);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 243);
 	
 	/**
 	 * @class BaseEventEmitter
@@ -1160,18 +1161,18 @@ webpackJsonp([0],{
 	})();
 	
 	module.exports = BaseEventEmitter;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 242:
-/*!*******************************************************!*\
-  !*** ./~/flux/~/fbemitter/lib/EmitterSubscription.js ***!
-  \*******************************************************/
+/***/ 240:
+/*!************************************************!*\
+  !*** ./~/fbemitter/lib/EmitterSubscription.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * Copyright (c) 2014-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -1188,7 +1189,7 @@ webpackJsonp([0],{
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var EventSubscription = __webpack_require__(/*! ./EventSubscription */ 243);
+	var EventSubscription = __webpack_require__(/*! ./EventSubscription */ 241);
 	
 	/**
 	 * EmitterSubscription represents a subscription with listener and context data.
@@ -1221,14 +1222,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 243:
-/*!*****************************************************!*\
-  !*** ./~/flux/~/fbemitter/lib/EventSubscription.js ***!
-  \*****************************************************/
+/***/ 241:
+/*!**********************************************!*\
+  !*** ./~/fbemitter/lib/EventSubscription.js ***!
+  \**********************************************/
 /***/ function(module, exports) {
 
 	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * Copyright (c) 2014-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -1279,14 +1280,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 244:
-/*!***********************************************************!*\
-  !*** ./~/flux/~/fbemitter/lib/EventSubscriptionVendor.js ***!
-  \***********************************************************/
+/***/ 242:
+/*!****************************************************!*\
+  !*** ./~/fbemitter/lib/EventSubscriptionVendor.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * Copyright (c) 2014-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -1301,7 +1302,7 @@ webpackJsonp([0],{
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 245);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 243);
 	
 	/**
 	 * EventSubscriptionVendor stores a set of EventSubscriptions that are
@@ -1388,18 +1389,18 @@ webpackJsonp([0],{
 	})();
 	
 	module.exports = EventSubscriptionVendor;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 245:
-/*!****************************************************!*\
-  !*** ./~/flux/~/fbemitter/~/fbjs/lib/invariant.js ***!
-  \****************************************************/
+/***/ 243:
+/*!*********************************************!*\
+  !*** ./~/fbemitter/~/fbjs/lib/invariant.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-2015, Facebook, Inc.
+	 * Copyright (c) 2013-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
@@ -1421,12 +1422,18 @@ webpackJsonp([0],{
 	 * will remain to ensure logic does not differ in production.
 	 */
 	
-	function invariant(condition, format, a, b, c, d, e, f) {
-	  if (process.env.NODE_ENV !== 'production') {
+	var validateFormat = function validateFormat(format) {};
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  validateFormat = function validateFormat(format) {
 	    if (format === undefined) {
 	      throw new Error('invariant requires an error message argument');
 	    }
-	  }
+	  };
+	}
+	
+	function invariant(condition, format, a, b, c, d, e, f) {
+	  validateFormat(format);
 	
 	  if (!condition) {
 	    var error;
@@ -1447,27 +1454,28 @@ webpackJsonp([0],{
 	}
 	
 	module.exports = invariant;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 246:
-/*!********************************************************!*\
-  !*** ./~/flux/~/fbemitter/~/fbjs/lib/emptyFunction.js ***!
-  \********************************************************/
+/***/ 244:
+/*!*************************************************!*\
+  !*** ./~/fbemitter/~/fbjs/lib/emptyFunction.js ***!
+  \*************************************************/
 /***/ function(module, exports) {
 
+	"use strict";
+	
 	/**
-	 * Copyright 2013-2015, Facebook, Inc.
+	 * Copyright (c) 2013-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * 
 	 */
-	
-	"use strict";
 	
 	function makeEmptyFunction(arg) {
 	  return function () {
@@ -1480,7 +1488,7 @@ webpackJsonp([0],{
 	 * primarily useful idiomatically for overridable function endpoints which
 	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
 	 */
-	function emptyFunction() {}
+	var emptyFunction = function emptyFunction() {};
 	
 	emptyFunction.thatReturns = makeEmptyFunction;
 	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
@@ -1497,7 +1505,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 247:
+/***/ 245:
 /*!**************************************!*\
   !*** ./~/flux/lib/abstractMethod.js ***!
   \**************************************/
@@ -1517,21 +1525,21 @@ webpackJsonp([0],{
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	function abstractMethod(className, methodName) {
 	   true ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Subclasses of %s must override %s() with their own implementation.', className, methodName) : invariant(false) : undefined;
 	}
 	
 	module.exports = abstractMethod;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 248:
-/*!**********************************************!*\
-  !*** ./~/flux/~/immutable/dist/immutable.js ***!
-  \**********************************************/
+/***/ 246:
+/*!***************************************!*\
+  !*** ./~/immutable/dist/immutable.js ***!
+  \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6516,7 +6524,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 249:
+/***/ 247:
 /*!***************************************!*\
   !*** ./~/flux/lib/FluxMixinLegacy.js ***!
   \***************************************/
@@ -6536,9 +6544,9 @@ webpackJsonp([0],{
 	
 	'use strict';
 	
-	var FluxStoreGroup = __webpack_require__(/*! ./FluxStoreGroup */ 234);
+	var FluxStoreGroup = __webpack_require__(/*! ./FluxStoreGroup */ 232);
 	
-	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 235);
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 233);
 	
 	/**
 	 * `FluxContainer` should be preferred over this mixin, but it requires using
@@ -6639,11 +6647,11 @@ webpackJsonp([0],{
 	}
 	
 	module.exports = FluxMixinLegacy;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
 
-/***/ 250:
+/***/ 248:
 /*!***************************************!*\
   !*** ./app/components/KanbanBoard.js ***!
   \***************************************/
@@ -6661,15 +6669,15 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDnd = __webpack_require__(/*! react-dnd */ 251);
+	var _reactDnd = __webpack_require__(/*! react-dnd */ 249);
 	
-	var _reactDndHtml5Backend = __webpack_require__(/*! react-dnd-html5-backend */ 366);
+	var _reactDndHtml5Backend = __webpack_require__(/*! react-dnd-html5-backend */ 384);
 	
 	var _reactDndHtml5Backend2 = _interopRequireDefault(_reactDndHtml5Backend);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 168);
 	
-	var _List = __webpack_require__(/*! ./List */ 454);
+	var _List = __webpack_require__(/*! ./List */ 416);
 	
 	var _List2 = _interopRequireDefault(_List);
 	
@@ -6687,7 +6695,7 @@ webpackJsonp([0],{
 	  function KanbanBoard() {
 	    _classCallCheck(this, KanbanBoard);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(KanbanBoard).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (KanbanBoard.__proto__ || Object.getPrototypeOf(KanbanBoard)).apply(this, arguments));
 	  }
 	
 	  _createClass(KanbanBoard, [{
@@ -6733,7 +6741,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 454:
+/***/ 416:
 /*!********************************!*\
   !*** ./app/components/List.js ***!
   \********************************/
@@ -6753,17 +6761,17 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDnd = __webpack_require__(/*! react-dnd */ 251);
+	var _reactDnd = __webpack_require__(/*! react-dnd */ 249);
 	
-	var _Card = __webpack_require__(/*! ./Card */ 455);
+	var _Card = __webpack_require__(/*! ./Card */ 417);
 	
 	var _Card2 = _interopRequireDefault(_Card);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 768);
+	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 730);
 	
 	var _CardActionCreators2 = _interopRequireDefault(_CardActionCreators);
 	
@@ -6794,7 +6802,7 @@ webpackJsonp([0],{
 	  function List() {
 	    _classCallCheck(this, List);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(List).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).apply(this, arguments));
 	  }
 	
 	  _createClass(List, [{
@@ -6834,7 +6842,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 455:
+/***/ 417:
 /*!********************************!*\
   !*** ./app/components/Card.js ***!
   \********************************/
@@ -6852,27 +6860,27 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 456);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 418);
 	
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 	
-	var _marked = __webpack_require__(/*! marked */ 463);
+	var _marked = __webpack_require__(/*! marked */ 425);
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
-	var _reactDnd = __webpack_require__(/*! react-dnd */ 251);
+	var _reactDnd = __webpack_require__(/*! react-dnd */ 249);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _CheckList = __webpack_require__(/*! ./CheckList */ 465);
+	var _CheckList = __webpack_require__(/*! ./CheckList */ 427);
 	
 	var _CheckList2 = _interopRequireDefault(_CheckList);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 168);
 	
-	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 768);
+	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 730);
 	
 	var _CardActionCreators2 = _interopRequireDefault(_CardActionCreators);
 	
@@ -6932,7 +6940,7 @@ webpackJsonp([0],{
 	  function Card() {
 	    _classCallCheck(this, Card);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Card).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
 	  }
 	
 	  _createClass(Card, [{
@@ -6943,9 +6951,9 @@ webpackJsonp([0],{
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _props = this.props;
-	      var connectDragSource = _props.connectDragSource;
-	      var connectDropTarget = _props.connectDropTarget;
+	      var _props = this.props,
+	          connectDragSource = _props.connectDragSource,
+	          connectDropTarget = _props.connectDropTarget;
 	
 	
 	      var cardDetails = void 0;
@@ -6979,7 +6987,7 @@ webpackJsonp([0],{
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/edit/' + this.props.id },
-	            '✎'
+	            '\u270E'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -7017,7 +7025,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 464:
+/***/ 426:
 /*!**************************!*\
   !*** ./app/constants.js ***!
   \**************************/
@@ -7077,7 +7085,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 465:
+/***/ 427:
 /*!*************************************!*\
   !*** ./app/components/CheckList.js ***!
   \*************************************/
@@ -7095,7 +7103,7 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _TaskActionCreators = __webpack_require__(/*! ../actions/TaskActionCreators */ 466);
+	var _TaskActionCreators = __webpack_require__(/*! ../actions/TaskActionCreators */ 428);
 	
 	var _TaskActionCreators2 = _interopRequireDefault(_TaskActionCreators);
 	
@@ -7113,7 +7121,7 @@ webpackJsonp([0],{
 	  function CheckList() {
 	    _classCallCheck(this, CheckList);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(CheckList).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (CheckList.__proto__ || Object.getPrototypeOf(CheckList)).apply(this, arguments));
 	  }
 	
 	  _createClass(CheckList, [{
@@ -7172,7 +7180,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 466:
+/***/ 428:
 /*!*******************************************!*\
   !*** ./app/actions/TaskActionCreators.js ***!
   \*******************************************/
@@ -7184,15 +7192,15 @@ webpackJsonp([0],{
 	  value: true
 	});
 	
-	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 467);
+	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 429);
 	
 	var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _KanbanApi = __webpack_require__(/*! ../api/KanbanApi */ 766);
+	var _KanbanApi = __webpack_require__(/*! ../api/KanbanApi */ 728);
 	
 	var _KanbanApi2 = _interopRequireDefault(_KanbanApi);
 	
@@ -7226,7 +7234,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 467:
+/***/ 429:
 /*!******************************!*\
   !*** ./app/AppDispatcher.js ***!
   \******************************/
@@ -7240,9 +7248,9 @@ webpackJsonp([0],{
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _flux = __webpack_require__(/*! flux */ 468);
+	var _flux = __webpack_require__(/*! flux */ 430);
 	
-	__webpack_require__(/*! babel-polyfill */ 470);
+	__webpack_require__(/*! babel-polyfill */ 432);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -7256,7 +7264,7 @@ webpackJsonp([0],{
 	  function AppDispatcher() {
 	    _classCallCheck(this, AppDispatcher);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(AppDispatcher).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (AppDispatcher.__proto__ || Object.getPrototypeOf(AppDispatcher)).apply(this, arguments));
 	  }
 	
 	  _createClass(AppDispatcher, [{
@@ -7268,9 +7276,9 @@ webpackJsonp([0],{
 	    value: function dispatchAsync(promise, types, payload) {
 	      var _this2 = this;
 	
-	      var request = types.request;
-	      var success = types.success;
-	      var failure = types.failure;
+	      var request = types.request,
+	          success = types.success,
+	          failure = types.failure;
 	
 	      this.dispatch({ type: request, payload: Object.assign({}, payload) });
 	      promise.then(function (response) {
@@ -7294,7 +7302,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 766:
+/***/ 728:
 /*!******************************!*\
   !*** ./app/api/KanbanApi.js ***!
   \******************************/
@@ -7306,17 +7314,17 @@ webpackJsonp([0],{
 	  value: true
 	});
 	
-	__webpack_require__(/*! whatwg-fetch */ 767);
+	__webpack_require__(/*! whatwg-fetch */ 729);
 	
-	__webpack_require__(/*! babel-polyfill */ 470);
+	__webpack_require__(/*! babel-polyfill */ 432);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	//const API_URL = 'http://kanbanapi.pro-react.com';     //The API_URL has moved into the constants file
+	//const API_URL = 'http://kanbanapi.pro-react.com';     //The API_URL has moved into the constants file 
 	var API_HEADERS = {
 	  'Content-Type': 'application/json',
 	  Authorization: 'any-string-you-like'
@@ -7379,7 +7387,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 768:
+/***/ 730:
 /*!*******************************************!*\
   !*** ./app/actions/CardActionCreators.js ***!
   \*******************************************/
@@ -7391,21 +7399,21 @@ webpackJsonp([0],{
 	  value: true
 	});
 	
-	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 467);
+	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 429);
 	
 	var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _KanbanApi = __webpack_require__(/*! ../api/KanbanApi */ 766);
+	var _KanbanApi = __webpack_require__(/*! ../api/KanbanApi */ 728);
 	
 	var _KanbanApi2 = _interopRequireDefault(_KanbanApi);
 	
-	var _utils = __webpack_require__(/*! ../utils */ 769);
+	var _utils = __webpack_require__(/*! ../utils */ 731);
 	
-	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 770);
+	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 732);
 	
 	var _CardStore2 = _interopRequireDefault(_CardStore);
 	
@@ -7482,7 +7490,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 769:
+/***/ 731:
 /*!**********************!*\
   !*** ./app/utils.js ***!
   \**********************/
@@ -7495,7 +7503,7 @@ webpackJsonp([0],{
 	});
 	exports.throttle = undefined;
 	
-	__webpack_require__(/*! babel-polyfill */ 470);
+	__webpack_require__(/*! babel-polyfill */ 432);
 	
 	var throttle = exports.throttle = function throttle(func, wait) {
 	  var context = void 0,
@@ -7528,7 +7536,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 770:
+/***/ 732:
 /*!*********************************!*\
   !*** ./app/stores/CardStore.js ***!
   \*********************************/
@@ -7542,21 +7550,21 @@ webpackJsonp([0],{
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 467);
+	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 429);
 	
 	var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _utils = __webpack_require__(/*! flux/utils */ 232);
+	var _utils = __webpack_require__(/*! flux/utils */ 230);
 	
-	var _reactAddonsUpdate = __webpack_require__(/*! react-addons-update */ 771);
+	var _reactAddonsUpdate = __webpack_require__(/*! react-addons-update */ 733);
 	
 	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
 	
-	__webpack_require__(/*! babel-polyfill */ 470);
+	__webpack_require__(/*! babel-polyfill */ 432);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -7574,7 +7582,7 @@ webpackJsonp([0],{
 	  function CardStore() {
 	    _classCallCheck(this, CardStore);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(CardStore).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (CardStore.__proto__ || Object.getPrototypeOf(CardStore)).apply(this, arguments));
 	  }
 	
 	  _createClass(CardStore, [{
@@ -7609,21 +7617,21 @@ webpackJsonp([0],{
 	          return (0, _reactAddonsUpdate2.default)(this.getState(), { $push: [action.payload.card] });
 	
 	        case _constants2.default.CREATE_CARD_SUCCESS:
-	          cardIndex = this.getCardIndex(action.payload.card.id);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.card.id);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            id: { $set: action.payload.response.id }
 	          }));
 	
 	        case _constants2.default.CREATE_CARD_ERROR:
-	          cardIndex = this.getCardIndex(action.payload.card.id);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), { $splice: [[cardIndex, 1]] });
+	          _cardIndex = this.getCardIndex(action.payload.card.id);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), { $splice: [[_cardIndex, 1]] });
 	
 	        /*
 	         * Card Status Toggle
 	         */
 	        case _constants2.default.TOGGLE_CARD_DETAILS:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            showDetails: { $apply: function $apply(currentValue) {
 	                return currentValue !== false ? false : true;
 	              } }
@@ -7633,14 +7641,14 @@ webpackJsonp([0],{
 	         * Card Update
 	         */
 	        case _constants2.default.UPDATE_CARD:
-	          cardIndex = this.getCardIndex(action.payload.card.id);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.card.id);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            $set: action.payload.draftCard
 	          }));
 	
 	        case _constants2.default.UPDATE_CARD_ERROR:
-	          cardIndex = this.getCardIndex(action.payload.card.id);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.card.id);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            $set: action.payload.card
 	          }));
 	
@@ -7649,23 +7657,23 @@ webpackJsonp([0],{
 	         */
 	        case _constants2.default.UPDATE_CARD_POSITION:
 	          if (action.payload.cardId !== action.payload.afterId) {
-	            cardIndex = this.getCardIndex(action.payload.cardId);
-	            var card = this.getState()[cardIndex];
+	            _cardIndex = this.getCardIndex(action.payload.cardId);
+	            var card = this.getState()[_cardIndex];
 	            var afterIndex = this.getCardIndex(action.payload.afterId);
 	            return (0, _reactAddonsUpdate2.default)(this.getState(), {
-	              $splice: [[cardIndex, 1], [afterIndex, 0, card]]
+	              $splice: [[_cardIndex, 1], [afterIndex, 0, card]]
 	            });
 	          }
 	
 	        case _constants2.default.UPDATE_CARD_STATUS:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            status: { $set: action.payload.listId }
 	          }));
 	
 	        case _constants2.default.PERSIST_CARD_DRAG_ERROR:
-	          cardIndex = this.getCardIndex(action.payload.cardProps.id);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardProps.id);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            status: { $set: action.payload.cardProps.status }
 	          }));
 	
@@ -7673,28 +7681,28 @@ webpackJsonp([0],{
 	         * Task Creation
 	         */
 	        case _constants2.default.CREATE_TASK:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: { $push: [action.payload.task] }
 	          }));
 	
 	        case _constants2.default.CREATE_TASK_SUCCESS:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          taskIndex = this.getState()[cardIndex].tasks.findIndex(function (task) {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          taskIndex = this.getState()[_cardIndex].tasks.findIndex(function (task) {
 	            return task.id == action.payload.task.id;
 	          });
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: _defineProperty({}, taskIndex, {
 	              id: { $set: action.payload.response.id }
 	            })
 	          }));
 	
 	        case _constants2.default.CREATE_TASK_ERROR:
-	          var cardIndex = this.getCardIndex(action.payload.cardId);
-	          var taskIndex = this.getState()[cardIndex].tasks.findIndex(function (task) {
+	          var _cardIndex = this.getCardIndex(action.payload.cardId);
+	          var taskIndex = this.getState()[_cardIndex].tasks.findIndex(function (task) {
 	            return task.id == action.payload.task.id;
 	          });
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: {
 	              $splice: [[taskIndex, 1]]
 	            }
@@ -7704,14 +7712,14 @@ webpackJsonp([0],{
 	         * Task Deletion
 	         */
 	        case _constants2.default.DELETE_TASK:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: { $splice: [[action.payload.taskIndex, 1]] }
 	          }));
 	
 	        case _constants2.default.DELETE_TASK_ERROR:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: { $splice: [[action.payload.taskIndex, 0, action.payload.task]] }
 	          }));
 	
@@ -7719,16 +7727,16 @@ webpackJsonp([0],{
 	         * Task Toggling
 	         */
 	        case _constants2.default.TOGGLE_TASK:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: _defineProperty({}, action.payload.taskIndex, { done: { $apply: function $apply(done) {
 	                  return !done;
 	                } } })
 	          }));
 	
 	        case _constants2.default.TOGGLE_TASK_ERROR:
-	          cardIndex = this.getCardIndex(action.payload.cardId);
-	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, cardIndex, {
+	          _cardIndex = this.getCardIndex(action.payload.cardId);
+	          return (0, _reactAddonsUpdate2.default)(this.getState(), _defineProperty({}, _cardIndex, {
 	            tasks: _defineProperty({}, action.payload.taskIndex, { done: { $apply: function $apply(done) {
 	                  return !done;
 	                } } })
@@ -7747,7 +7755,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 773:
+/***/ 735:
 /*!************************************!*\
   !*** ./app/components/EditCard.js ***!
   \************************************/
@@ -7765,25 +7773,25 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _CardForm = __webpack_require__(/*! ./CardForm */ 774);
+	var _CardForm = __webpack_require__(/*! ./CardForm */ 736);
 	
 	var _CardForm2 = _interopRequireDefault(_CardForm);
 	
-	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 770);
+	var _CardStore = __webpack_require__(/*! ../stores/CardStore */ 732);
 	
 	var _CardStore2 = _interopRequireDefault(_CardStore);
 	
-	var _DraftStore = __webpack_require__(/*! ../stores/DraftStore */ 775);
+	var _DraftStore = __webpack_require__(/*! ../stores/DraftStore */ 737);
 	
 	var _DraftStore2 = _interopRequireDefault(_DraftStore);
 	
-	var _utils = __webpack_require__(/*! flux/utils */ 232);
+	var _utils = __webpack_require__(/*! flux/utils */ 230);
 	
-	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 768);
+	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 730);
 	
 	var _CardActionCreators2 = _interopRequireDefault(_CardActionCreators);
 	
-	__webpack_require__(/*! babel-polyfill */ 470);
+	__webpack_require__(/*! babel-polyfill */ 432);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -7799,7 +7807,7 @@ webpackJsonp([0],{
 	  function EditCard() {
 	    _classCallCheck(this, EditCard);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(EditCard).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (EditCard.__proto__ || Object.getPrototypeOf(EditCard)).apply(this, arguments));
 	  }
 	
 	  _createClass(EditCard, [{
@@ -7856,7 +7864,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 774:
+/***/ 736:
 /*!************************************!*\
   !*** ./app/components/CardForm.js ***!
   \************************************/
@@ -7888,7 +7896,7 @@ webpackJsonp([0],{
 	  function CardForm() {
 	    _classCallCheck(this, CardForm);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(CardForm).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (CardForm.__proto__ || Object.getPrototypeOf(CardForm)).apply(this, arguments));
 	  }
 	
 	  _createClass(CardForm, [{
@@ -7999,7 +8007,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 775:
+/***/ 737:
 /*!**********************************!*\
   !*** ./app/stores/DraftStore.js ***!
   \**********************************/
@@ -8013,17 +8021,17 @@ webpackJsonp([0],{
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 467);
+	var _AppDispatcher = __webpack_require__(/*! ../AppDispatcher */ 429);
 	
 	var _AppDispatcher2 = _interopRequireDefault(_AppDispatcher);
 	
-	var _constants = __webpack_require__(/*! ../constants */ 464);
+	var _constants = __webpack_require__(/*! ../constants */ 426);
 	
 	var _constants2 = _interopRequireDefault(_constants);
 	
-	var _utils = __webpack_require__(/*! flux/utils */ 232);
+	var _utils = __webpack_require__(/*! flux/utils */ 230);
 	
-	var _reactAddonsUpdate = __webpack_require__(/*! react-addons-update */ 771);
+	var _reactAddonsUpdate = __webpack_require__(/*! react-addons-update */ 733);
 	
 	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
 	
@@ -8054,7 +8062,7 @@ webpackJsonp([0],{
 	  function DraftStore() {
 	    _classCallCheck(this, DraftStore);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(DraftStore).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (DraftStore.__proto__ || Object.getPrototypeOf(DraftStore)).apply(this, arguments));
 	  }
 	
 	  _createClass(DraftStore, [{
@@ -8093,7 +8101,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 776:
+/***/ 738:
 /*!***********************************!*\
   !*** ./app/components/NewCard.js ***!
   \***********************************/
@@ -8111,17 +8119,17 @@ webpackJsonp([0],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _CardForm = __webpack_require__(/*! ./CardForm */ 774);
+	var _CardForm = __webpack_require__(/*! ./CardForm */ 736);
 	
 	var _CardForm2 = _interopRequireDefault(_CardForm);
 	
-	var _DraftStore = __webpack_require__(/*! ../stores/DraftStore */ 775);
+	var _DraftStore = __webpack_require__(/*! ../stores/DraftStore */ 737);
 	
 	var _DraftStore2 = _interopRequireDefault(_DraftStore);
 	
-	var _utils = __webpack_require__(/*! flux/utils */ 232);
+	var _utils = __webpack_require__(/*! flux/utils */ 230);
 	
-	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 768);
+	var _CardActionCreators = __webpack_require__(/*! ../actions/CardActionCreators */ 730);
 	
 	var _CardActionCreators2 = _interopRequireDefault(_CardActionCreators);
 	
@@ -8139,7 +8147,7 @@ webpackJsonp([0],{
 	  function NewCard() {
 	    _classCallCheck(this, NewCard);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(NewCard).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (NewCard.__proto__ || Object.getPrototypeOf(NewCard)).apply(this, arguments));
 	  }
 	
 	  _createClass(NewCard, [{
