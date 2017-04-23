@@ -1,3 +1,4 @@
+**This project is based on https://github.com/JonPSmith/AspNetReactSamples/tree/master/ReactWebPack.CoreRC2**
 # AspNetReactSamples
 
 Wecome to this ASP.NET solution which contains examples of how to incorporate, build and Unit Test 
